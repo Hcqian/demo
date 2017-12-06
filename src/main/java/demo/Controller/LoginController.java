@@ -14,6 +14,7 @@ public class LoginController {
 
     @RequestMapping("index")
     public String index(){
+
         System.out.println("indexMapping");
         return  "index";
     }
