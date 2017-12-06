@@ -23,8 +23,7 @@ public class LoginController {
         return  "login";
     }
     @RequestMapping(value = "doLogin")
-    public String doLogin(/*HttpServletRequest request, HttpServletResponse response,*/
-                          @RequestParam(value="email") String email,String password,ModelMap model){
+    public String doLogin(@RequestParam(value="email") String email,String password,ModelMap model){
         return  "show";
     }
 }
